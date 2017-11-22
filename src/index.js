@@ -1,14 +1,13 @@
-console.log('!!');
-import materialize from 'materialize-css/dist/css/materialize.css';
-
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {connect} from 'react-redux';
 import {Provider} from 'react-redux';
-import store from './store/configureStore';
+import configureStore from './store/configureStore';
+import App from './containers/App';
+
+const store = configureStore();
 
 ReactDOM.render((
     <Provider store={store}>
-        <h1> Success </h1>
+        <App/>
     </Provider>
 ), document.getElementById('root'));

@@ -1,6 +1,7 @@
 const resume = {
     header: {
         name: 'Your Name',
+        designation: 'Your Designation',
         email: 'youremail@gmail.com',
         phone: '9*********0',
         github: 'https://github.com/scsiva1991',

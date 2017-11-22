@@ -1,5 +1,8 @@
 import {combineReducers} from 'redux';
 import resumeReducer from './resumeReducer';
-export default combineReducers({
+
+const reducer = combineReducers({
     resume: resumeReducer
 });
+
+export default reducer;

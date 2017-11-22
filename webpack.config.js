@@ -22,6 +22,11 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery"
+    }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development')
     })
@@ -38,8 +43,8 @@ module.exports = {
       test: /\.json?$/,
       loader: 'json'
     }, {
-      test: /\.css$/,
-      loader: 'style-loader!css-loader'
+      test: /\.(scss|css)$/,
+      loaders: ["style-loader","css-loader","sass-loader"]
     }, {
       test: /\.(ttf|eot|svg|png|woff(2)?)(\?[a-z0-9]+)?$/,
       loader: 'file-loader',

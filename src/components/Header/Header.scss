@@ -1,0 +1,13 @@
+.header-user-fields li:not(:last-child):after {
+    content:' | ';
+}
+
+.user-field {
+    display: inline-table;
+    margin-right: 5px;
+}
+
+.header-user-icon {
+    vertical-align: middle;
+    margin-right: 2px;
+}

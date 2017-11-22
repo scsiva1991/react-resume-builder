@@ -5,11 +5,13 @@ import resume from '../util/data';
 const initialState = { ...resume };
 const savedState = loadState( KEY_RESUME );
 
-export default(state = savedState || initialState, action) => {
+const resumeReducer = (state = savedState || initialState, action) => {
     switch(action.type) {
         case LOAD_RESUME:
             return state;
-        default:
+        default: 
             return state;
     }
 }
+
+export default resumeReducer;
