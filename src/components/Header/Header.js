@@ -86,7 +86,7 @@ Header.defaultProps = {
     showLinkedin: true,
     showGithub: true,
     showWebsite: true,
-    showStackOverflow: true
+    showStackOverflow: false
 };
 
 const mapStateToProps = (state) => ({

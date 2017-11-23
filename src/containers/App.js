@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Header, SideNav, ProjectList } from '../components/index';
+import { Header, SideNav, ProjectList, TechSkills } from '../components/index';
 import {connect} from 'react-redux';
 
 import './App.scss';
@@ -18,6 +18,7 @@ export default class App extends Component {
                             <ProjectList/>
                         </div>
                         <div className="col s6">
+                            <TechSkills/>
                         </div>
                     </div>
                 </div>

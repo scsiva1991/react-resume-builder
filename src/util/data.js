@@ -34,6 +34,20 @@ const resume = {
                 'point 4'
             ]
         }
+    ],
+    techSkills: [
+        {
+            name: 'Javascript',
+            skillPercentage: 80
+        },
+        {
+            name: 'HTML & CSS',
+            skillPercentage: 90
+        },
+        {
+            name: 'React',
+            skillPercentage: 65
+        } 
     ]
 }
 

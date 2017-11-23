@@ -14,7 +14,7 @@ export class ProjectList extends Component {
                             <Project key={index} project={project}/>
                         )
                     })
-                }
+                } 
             </div>
         )
     }
