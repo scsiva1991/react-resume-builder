@@ -6,14 +6,14 @@ class TechSkills extends Component {
     render() {
         return(
             <div>
-                <h5>My Tech Skills</h5>
+                <h5>Tech Skills</h5>
                 <hr/>
                 <div className="row">
                 {
                     this.props.techSkills.map((techSkill, index) => {
                         return(
-                            <div className="col s4">
-                                <SkillChart key={index} title={techSkill.name} skillPercentage={techSkill.skillPercentage} />
+                            <div className="col s4"  key={index}>
+                                <SkillChart title={techSkill.name} skillPercentage={techSkill.skillPercentage} />
                             </div>
                         )
                     })

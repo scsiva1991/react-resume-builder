@@ -1,0 +1,12 @@
+.experience-list {
+    display: inline-table;
+    margin-right: 5px;
+}
+
+.experience-list-container li:not(:last-child):not(:first-child)::after {
+    content: ' , ';
+}
+
+.experience-list-container {
+    margin-top: 0px;
+}

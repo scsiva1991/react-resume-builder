@@ -28,7 +28,7 @@ export default class Project extends Component {
                                     return(
                                         <li key={index}>
                                             <span>
-                                                <i className="fa fa-square-o mg-r-5" aria-hidden="true"></i>
+                                                <i className="fa fa-bullseye mg-r-5" aria-hidden="true"></i>
                                                 {detail}
                                             </span>
                                         </li>
